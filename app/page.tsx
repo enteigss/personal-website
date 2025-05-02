@@ -4,7 +4,7 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Github, Mail, Linkedin, ExternalLink } from "lucide-react"
+import { Github, Mail, Linkedin, ExternalLink, BookOpen } from "lucide-react"
 
 export default function Home() {
   return (
@@ -42,6 +42,11 @@ export default function Home() {
             <Button variant="outline" size="icon" aria-label="Email" asChild>
               <a href="mailto:jordanandersongreen@gmail.com">
                 <Mail className="h-5 w-5" />
+              </a>
+            </Button>
+            <Button variant="outline" size="icon" aria-label="Blog" asChild>
+              <a href="https://my-blog-4.ghost.io/" target="_blank" rel="noopener noreferrer">
+                <BookOpen className="h-5 w-5" />
               </a>
             </Button>
           </div>
