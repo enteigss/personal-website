@@ -26,7 +26,7 @@ export default function Home() {
           </div>
           <h1 className="text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl mb-4">Jordan Green</h1>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Developer & AI Engineer exploring the possibilities of technology and AI.
+            Product-minded developer exploring the possibilities of technology and AI.
           </p>
           <div className="flex justify-center gap-4">
             <Button variant="outline" size="icon" aria-label="GitHub" asChild>
@@ -72,28 +72,45 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <p className="text-gray-600 mb-4">
-                I'm a passionate developer with a strong technical background including Software Engineering and Data Science. 
-                I'm currently most interested in AI, with a special interest in how it will transform the development process, 
-                and how it can be used to create more engaging experiences. 
+                Technical background. Product & software development experience. Never-ending curiousity.
+              </p>
+              <p className="text-gray-600 mb-4">
+                I love using my skills and passions to explore cool ideas and solve interesting problems. From
+                integrating a custom Eren Jaeger AI agent into a virtual sandbox to trying to figure out how to make 
+                it easier for people in the Bay Area to find community, I find myself being captivated by a wide variety
+                of areas. 
               </p>
               <p className="text-gray-600">
-                When I'm not coding, you can find me hanging out with friends, reading a murder mystery, or having a deep conversation
+                When I'm not coding, you can find me hanging out with friends, reading a murder mystery, or having a conversation
                 about the future of AI (among other things). 
               </p>
             </div>
-            <div className="space-y-4">
-              <h3 className="text-xl font-semibold text-gray-900">Skills & Expertise</h3>
-              <div className="flex flex-wrap gap-2">
-                <Badge>Python</Badge>
-                <Badge>Machine Learning</Badge>
-                <Badge>Sci-kit Learn</Badge>
-                <Badge>Hugging Face</Badge>
-                <Badge>PyTorch</Badge>
-                <Badge>Pandas</Badge>
-                <Badge>Git</Badge>
-                <Badge>SQL</Badge>
-                <Badge>Cursor</Badge>
-                <Badge>API Integration</Badge>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">Technical Skills</h3>
+                <div className="flex flex-wrap gap-2">
+                  <Badge>Python</Badge>
+                  <Badge>Machine Learning</Badge>
+                  <Badge>Sci-kit Learn</Badge>
+                  <Badge>Hugging Face</Badge>
+                  <Badge>PyTorch</Badge>
+                  <Badge>Pandas</Badge>
+                  <Badge>Git</Badge>
+                  <Badge>SQL</Badge>
+                  <Badge>Cursor</Badge>
+                  <Badge>API Integration</Badge>
+                </div>
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">Product Skills</h3>
+                <div className="flex flex-wrap gap-2">
+                  <Badge>Product Development</Badge>
+                  <Badge>User Research</Badge>
+                  <Badge>Rapid Prototyping</Badge>
+                  <Badge>Market Analysis</Badge>
+                  <Badge>Data-driven Decision Making</Badge>
+                  <Badge>MVP Development</Badge>
+                </div>
               </div>
             </div>
           </div>
@@ -131,6 +148,15 @@ export default function Home() {
                     </div>
                   </div>
                   <p className="text-gray-600 mb-4">{project.description}</p>
+                  {project.caseStudy && (
+                    <div className="mb-4">
+                      <Button variant="outline" size="sm" asChild>
+                        <a href={project.caseStudy}>
+                          Case Study
+                        </a>
+                      </Button>
+                    </div>
+                  )}
                   <div className="flex flex-wrap gap-1">
                     {project.technologies.map((tech, techIndex) => (
                       <Badge key={techIndex} variant="secondary" className="text-xs">
@@ -186,6 +212,14 @@ export default function Home() {
 
 // Sample project data
 const projects = [
+  {
+    title: "Bay Area Discord Discovery",
+    description: "A simple web app for finding discord servers in the Bay Area (vibe coded in a day), and my journey building it (longer than a day).",
+    technologies: ["Product Development", "User Research", "Rapid Prototyping"],
+    github: null,
+    link: "https://bay-discovery.com/",
+    caseStudy: "/case-study",
+  },
   {
     title: "AI QuickBooks Assistant",
     description: "An AI powered web application that allows users to use natural language to access their QuickBooks data.",
