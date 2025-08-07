@@ -20,7 +20,7 @@ export default function CaseStudy() {
         <div className="space-y-8">
           <div>
             <h1 className="text-4xl font-bold text-gray-900 mb-4">
-              Bay Area Discord Discovery - Case Study
+              Bay Discovery: A Case Study on Using Discovery to Validate a Community Platform Idea
             </h1>
             <p className="text-xl text-gray-600">
               A detailed look at the development process and learnings
@@ -48,12 +48,7 @@ export default function CaseStudy() {
             <div className="bg-blue-50 p-6 rounded-lg mb-8">
               <h2 className="text-lg font-semibold text-blue-900 mb-2">Executive Summary</h2>
               <p className="text-blue-800">
-                Had an idea about a local-online community platform similar to discord, developed hypothesis, did research and validation. 
-                Learned that discovery is lacking when it comes to local discord community servers. Developed strategy to use discovery gap 
-                as a wedge for community platform. Built and launched basic discord discovery platform, and analyzed results using various metrics.
-              </p>
-              <p className="text-blue-800 font-medium mt-2">
-                <strong>Key Result:</strong> Launched discord discovery platform, validated initial product-market fit signals in the idea
+                Identified a gap in the market for local-first online communities. Initial research with 20+ potential users revealed that the primary user pain point was not the lack of a platform, but the difficulty in discovering existing local Discord servers. I pivoted the strategy to focus on this discovery problem, designing and launching an MVP discovery platform as a "wedge" to validate the market. The MVP launched in one day, attracted 179 unique visitors in the first week, and achieved a 10.6% click-through rate to listed servers, validating user demand for a dedicated local community discovery solution.
               </p>
             </div>
 
@@ -83,15 +78,14 @@ export default function CaseStudy() {
             <p><strong>How I Investigated the Problem:</strong></p>
             <p><strong>Research Methods:</strong></p>
             <ul>
-              <li>Viewing Reddit posts</li>
+              <li>Forum ethnography & sentiment analysis on subreddits such as r/bayarea and r/lonely</li>
               <li>Posting on Reddit</li>
-              <li>Messaging Reddit users</li>
+              <li>Qualitative user outreach & screening</li>
               <li>Viewing discord servers</li>
-              <li>Messaging Discord users</li>
               <li>Interviewing friends</li>
               <li>Surveys</li>
             </ul>
-            <p>Spoke to 20+ people over DM's over Reddit and Discord, spoke to 2 people in depth</p>
+            <p>Conducted 20+ initial qualitative interviews via digital channels to understand user behaviors and pain points.</p>
 
             <h3>Key Research Activities</h3>
             <p><strong>User Interviews:</strong></p>
@@ -196,6 +190,7 @@ export default function CaseStudy() {
             <h3>Strategic Rationale</h3>
             <p><strong>The "Wedge" Strategy Decision:</strong></p>
             <p><strong>Reasoning:</strong> Discovery seemed like a bigger issue, would be easier to solve and validate, and was something anyone looking for a community would want meaning the market was big</p>
+            <p>This approach de-risked the project by focusing on validating the most critical user assumption (the need for local community) with the lowest possible engineering investment.</p>
             <p><strong>Transition:</strong> I could build a discovery platform alongside performing more research, trying to identify pain points with existing platforms other than discovery, and could later use discovery platform as a wedge for my own specialized platform, or make the discovery the entire platform</p>
             <p><strong>Risk mitigated:</strong> Time risk of building a platform that no one wants</p>
 
@@ -211,7 +206,13 @@ export default function CaseStudy() {
               <li>Each server given a brief description, and relevant information including size and activity level</li>
               <li>Organization of directory to make it easy to navigate</li>
               <li>Ability to submit community to be on the directory</li>
-              <li><strong>Success metrics:</strong> Conversion rate, traffic volume</li>
+              <li><strong>Success metrics:</strong> 
+                <ul>
+                  <li><strong>Conversion Rate (Server Clicks / Visitors):</strong> To measure the quality of our curated list and validate that we are showing users relevant communities. A high rate indicates we are solving the discovery problem effectively.</li>
+                  <li><strong>Traffic Volume:</strong> To gauge the overall size of the addressable market and interest in the problem space.</li>
+                  <li><strong>Server Submissions:</strong> To validate that we are providing value to community owners, creating a flywheel for content and growth.</li>
+                </ul>
+              </li>
             </ul>
 
             <p><strong>Phase 2: Platform Transition</strong></p>
@@ -239,12 +240,13 @@ export default function CaseStudy() {
 
             <h3>Results & Validation</h3>
             <div className="bg-blue-50 p-4 rounded-lg my-4">
-              <p><strong>Usage Metrics (first week):</strong></p>
-              <ul>
-                <li><strong>Total visitors:</strong> 179</li>
-                <li><strong>Server clicks/joins:</strong> 40</li>
-                <li><strong>Server submissions:</strong> 11</li>
-              </ul>
+              <p><strong>Quantitative Results (First Week):</strong></p>
+              
+              <p><strong>Traffic:</strong> Acquired 179 unique visitors through organic posts on Discord and Reddit.</p>
+              
+              <p><strong>Engagement:</strong> Achieved a 10.06% click-through rate, with 18 users clicking to join a community, signaling user intent</p>
+              
+              <p><strong>Growth:</strong> Received 11 new server submissions from the community, demonstrating value for server administrators and validating a potential growth loop.</p>
               
               <p><strong>User Behavior Insights:</strong></p>
               <ul>
@@ -261,23 +263,23 @@ export default function CaseStudy() {
 
             <h3>Validation Outcomes</h3>
             <p><strong>What I Learned:</strong></p>
-            <ul>
-              <li>There are many server members/creators who want their servers to be discovered</li>
-              <li>Confirmed user demand for discovery solution</li>
-            </ul>
+            <p>The initial results validated the core hypothesis: a significant user need for local community discovery exists. The 22.3% engagement rate is a strong signal of early product-market fit. The next challenge is to determine if this need is frequent enough to build a sustainable, standalone product around.</p>
             
-            <p><strong>Next Steps:</strong></p>
-            <p>While there was positive feedback and early product-market fit signals, there was not enough to validate that there would be enough demand for a discovery platform for it to be a sustainable product. Next steps would be to identify why I got the results I did, and use what I learned to decide where to go from here, which could include a complete pivot, a new marketing strategy, or adding new features. In order to better understand the results I would want to interview users themselves.</p>
+            <p><strong>Next Steps:</strong> Based on the results, I would propose the following actions:</p>
+            <ul>
+              <li><strong>Deepen User Understanding:</strong> Conduct follow-up interviews with the users who clicked on the most popular servers (e.g., 'Neurodiverse Universe') to develop user personas and understand their specific motivations.</li>
+              <li><strong>Test a Growth Hypothesis:</strong> The 'Server Submission' feature was a surprise success. I would run an A/B test on the homepage to see if making submissions more prominent increases the rate of new community acquisition, which is key to long-term value.</li>
+            </ul>
 
             <h2 className="section-header">6. Skills Demonstrated & Learnings</h2>
             
             <h3>Skills Demonstrated</h3>
             <ul>
-              <li>User research and interview techniques (inspired by the mom test)</li>
-              <li>Data-driven decision making and pivoting</li>
-              <li>MVP development and rapid prototyping</li>
-              <li>Market analysis</li>
-              <li>Product strategy</li>
+              <li>User Research & Synthesis</li>
+              <li>Data-Driven Pivoting & Strategic Decision-Making</li>
+              <li>Rapid Prototyping & MVP Execution</li>
+              <li>Go-to-Market (GTM) & Launch</li>
+              <li>Product Strategy & Roadmapping</li>
             </ul>
 
             <h3>Key Learnings</h3>
@@ -297,7 +299,6 @@ export default function CaseStudy() {
               <li>Store interviews in documents</li>
               <li>Track key decisions and reasonings</li>
               <li>Set clear goals with metrics before making decisions (i.e. instead of "learn more about users through analytics" → "understand which servers users are interested so you can better decide who your target audience is")</li>
-              <li>Nothing because this is how you learn 🙂 (half-joking)</li>
             </ul>
 
             <h2 className="section-header">Appendix: Supporting Materials</h2>
