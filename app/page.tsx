@@ -216,7 +216,7 @@ const projects = [
     title: "Bay Area Discord Discovery",
     description: "A simple web app for finding discord servers in the Bay Area (vibe coded in a day), and my journey building it (longer than a day).",
     technologies: ["Product Development", "User Research", "Rapid Prototyping"],
-    github: null,
+    github: "https://github.com/enteigss/discord-gallery-grids",
     link: "https://bay-discovery.com/",
     caseStudy: "/case-study",
   },
