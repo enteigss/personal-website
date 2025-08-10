@@ -213,6 +213,14 @@ export default function Home() {
 // Sample project data
 const projects = [
   {
+    title: "Vibe",
+    description: "Building an app to make it easier for college students to connect with other students and meet their people.",
+    technologies: ["Rapid Prototyping", "Flutter", "Product Development", "Product Strategy"],
+    github: "",
+    link: "",
+    caseStudy: "/vibe-case-study",
+  },
+  {
     title: "Bay Area Discord Discovery",
     description: "A simple web app for finding discord servers in the Bay Area (vibe coded in a day), and my journey building it (longer than a day).",
     technologies: ["Product Development", "User Research", "Rapid Prototyping"],
